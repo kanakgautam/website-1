@@ -89,6 +89,7 @@
 .third-section-lists {
   display: flex;
   flex-direction: row;
+  width:90%;
 }
 .third-section-right {
   display: flex;
