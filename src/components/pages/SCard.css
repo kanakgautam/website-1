@@ -1,0 +1,47 @@
+
+  .scard-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+  }
+
+  .scard-title{
+      font-size: 28px;
+  }
+
+  .scard-title:hover{
+      color: #ff5d22;
+  }
+
+  .scard-label{
+      font-size: 16px;
+      color: #ff5d22;
+  }
+
+  .scard-img{
+      width:80%;
+  }
+  .scard-img-active{
+      opacity:0;
+      width:80%;
+      background-color: #ff5d22;
+  }
+  .scard-btn{
+      position: absolute;
+      background: #ff5d22;
+      height: 250px;
+      width: 250px;
+      color: #fff;
+      border:transparent;
+      font-size: 50px;
+      border-radius: 10px;
+      margin-bottom: 100px;
+  }
+  .scard-btn:hover{
+      color: black;
+  }
