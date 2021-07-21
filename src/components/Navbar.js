@@ -70,7 +70,7 @@ function Navbar() {
                 </li>
                 <li className='nav-item-mobile'>
                     <form>
-                        <input className='search-box' placeholder='Search anything'></input>
+                        <input className='search-box' placeholder='Search for anything'></input>
                     </form>
                 </li>
                 <li className='nav-item-mobile'>
@@ -80,7 +80,7 @@ function Navbar() {
             <div className='top-left'>
                 <div>
                     <form>
-                        <input className='search-box' placeholder='Search anything'></input>
+                        <input className='search-box' placeholder='Search for anything'></input>
                     </form>
                 </div>
                 <div className='get-started'>
