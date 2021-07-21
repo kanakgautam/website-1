@@ -34,50 +34,60 @@ function Navbar() {
     }
 
     return (
-            <nav className='navbar'>
-                <Link to='/' className='navbar-logo' >
-                    REWY
+        <nav className='navbar'>
+            <Link to='/' className='navbar-logo' >
+                REWY
             </Link>
-                <div className='menu-icon' onClick={handleClick}>
-                    <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-                </div>
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            Home
+            <div className='menu-icon' onClick={handleClick}>
+                <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            </div>
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <li className='nav-item'>
+                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        Home
                     </Link>
-                    </li>
-                    <li className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                            Services <i className='fas fa-caret-down' />
-                        </Link>
-                        {dropdown && <Dropdown />}
-                    </li>
-                    <li className='nav-item'>
-                        <Link to='/contact-us' className='nav-links' onClick={closeMobileMenu}>
-                            Contact Us
+                </li>
+                <li className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        Services <i className='fas fa-caret-down' />
                     </Link>
-                    </li>
-                    <li className='nav-item-mobile'>
-                        <form>
-                            <input className='search-box' placeholder='Search anything'></input>
-                        </form>
-                    </li>
-                    <li className='nav-item-mobile'>
-                        <Button />
-                    </li>
-                </ul>
-                <div className='top-left'>
-                    <div>
-                        <form>
-                            <input className='search-box' placeholder='Search anything'></input>
-                        </form>
-                    </div>
-                    <div className='get-started'>
-                        <Button />
-                    </div>
+                    {dropdown && <Dropdown />}
+                </li>
+                <li className='nav-item'>
+                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        Contact Us
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        Case Studies
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        Blog
+                    </Link>
+                </li>
+                <li className='nav-item-mobile'>
+                    <form>
+                        <input className='search-box' placeholder='Search anything'></input>
+                    </form>
+                </li>
+                <li className='nav-item-mobile'>
+                    <Button />
+                </li>
+            </ul>
+            <div className='top-left'>
+                <div>
+                    <form>
+                        <input className='search-box' placeholder='Search anything'></input>
+                    </form>
                 </div>
-            </nav>
+                <div className='get-started'>
+                    <Button />
+                </div>
+            </div>
+        </nav>
     )
 }
 export default Navbar;

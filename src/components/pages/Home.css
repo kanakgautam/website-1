@@ -322,6 +322,7 @@
     margin: 10px;
     font-size: 17px;
     color:#6b6b84;
+    width: 90%;
 }
 
 .footer-section-description-btns{
@@ -388,6 +389,7 @@
     font-size: 17px;
     color:#6b6b84;
     margin: 10px;
+    width: 90%;
 }
 
 @media screen and (max-width: 1050px) {
@@ -449,7 +451,29 @@
     color:gray;
     background-color:gray;
   }
-
+  .footer-section{
+    background-color: #fffbf5;
+    display: flex;
+    flex-direction:column;
+    padding: 5%;
+}
+.footer-section-social{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: flex-end;
+}
+.footer-section-social-list{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footer-section-description{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
 }
 @media screen and (max-width: 750px) {
   .third-section {
